@@ -9,7 +9,7 @@ import { ModelData } from '../../Data/ModelData'
 const DishCategory = () => {
   return (
     <>
-      <div className='h-screen bg-[#2B2A2A]'>
+      <div className='py-10 bg-[#2B2A2A]'>
         {/* buttons  */}
         <div className=''>
           <ul className='flex justify-center gap-6 font-medium pt-5'>
