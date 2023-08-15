@@ -1,7 +1,7 @@
 import React from 'react'
 import Card1 from '../Card1'
-import ChoicesData from '../../data/ChoicesData'
-import CuisineData from '../../data/CuisineData'
+import ChoicesData from '../../Data/ChoicesData'
+import CuisineData from '../../Data/CuisineData'
 
 const Choices = () => {
   return (
