@@ -4,6 +4,7 @@ import Banner from '../components/Banner/Banner'
 import Choices from '../components/Choices/Choices'
 import SeasonalTop from '../components/Seasonal-Top/SeasonalTop'
 import Footer from '../components/Footer'
+import RecommendedDishes from '../components/RecommendedDIshes/RecommendedDishes'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
   <Banner/>
   <Choices/>
   <SeasonalTop/>
+  
   <Footer/>
   </>
   )
