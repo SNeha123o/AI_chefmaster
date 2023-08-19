@@ -5,6 +5,7 @@ import DishCategory from '../components/ModelSection/DishCategory'
 import Choices from '../components/Choices/Choices'
 import SeasonalTop from '../components/Seasonal-Top/SeasonalTop'
 import Footer from '../components/Footer'
+import RecommendedDishes from '../components/RecommendedDIshes/RecommendedDishes'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
   <DishCategory/>
   <Choices/>
   <SeasonalTop/>
+  
   <Footer/>
   </>
   )

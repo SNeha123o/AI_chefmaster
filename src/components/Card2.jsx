@@ -37,7 +37,7 @@ const Card2 = ({ title, imageUrl, time, rating }) => {
       </div>
       </div>
 
-      <div className='flex flex-col justify-end items-left pl-8'>
+      <div className='flex flex-col justify-center h-full items-left pl-8'>
         <p className='font-semibold'>Prep Time</p>
         <p className="">{time} min</p>
       </div>
