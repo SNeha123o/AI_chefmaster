@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Card2 from '../Card2'
 import SeasonalDishesData from '../../Data/SeasonalDishesData'
 import TopDishesData from '../../Data/TopDishesData'
