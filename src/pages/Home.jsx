@@ -7,6 +7,7 @@ import SeasonalTop from '../components/Seasonal-Top/SeasonalTop'
 import Footer from '../components/Footer'
 import RecommendedDishes from '../components/RecommendedDIshes/RecommendedDishes'
 
+
 const Home = () => {
   return (
   <>
