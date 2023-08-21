@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import SingleDish from './pages/SingleDish'
 import Cooking from './pages/Cooking'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Route path='/cooking' element={<Cooking/>}/>
      </Routes> 
      </BrowserRouter>
-    
+     <Footer/>
     </>
   )
 }

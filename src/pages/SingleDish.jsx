@@ -3,7 +3,6 @@ import { BsFillStopwatchFill, BsFire } from "react-icons/bs";
 import { SiCodechef } from "react-icons/si";
 import NewMultiSelect from '../components/SingleDishItems/NewMultiSelect'
 import RecommendedDishes from "../components/RecommendedDIshes/RecommendedDishes";
-import Footer from "../components/Footer";
 import KitchenEquipments from "../components/SingleDishItems/KitchenEquipments";
 import { useState } from "react";
 import NumberOfPeople from "../components/SingleDishItems/NumberOfPeople";
@@ -203,7 +202,7 @@ const Dish = () => {
       
          
         <RecommendedDishes/>
-        <Footer/>
+       
       </div>
     </>
   );
