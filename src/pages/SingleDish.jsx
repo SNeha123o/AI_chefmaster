@@ -1,10 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { BsFillStopwatchFill, BsFire } from "react-icons/bs";
 import { SiCodechef } from "react-icons/si";
-// import NewMultiSelect from '../components/SingleDishItems/NewMultiSelect'
-import MultiSelectCom from "../components/SingleDishItems/MultiSelect";
-import RecommendedData from "../Data/RecommendedData";
+import NewMultiSelect from '../components/SingleDishItems/NewMultiSelect'
 import RecommendedDishes from "../components/RecommendedDIshes/RecommendedDishes";
 import Footer from "../components/Footer";
+import KitchenEquipments from "../components/SingleDishItems/KitchenEquipments";
+import { useState } from "react";
+import NumberOfPeople from "../components/SingleDishItems/NumberOfPeople";
+import { useNavigate } from "react-router-dom";
 
 
 const NutritionValue = [
@@ -48,7 +51,29 @@ const mainIngradients = [
   }
 ]
 
+const options = [
+  { label: "Cinnamon stick", value: 1 },
+  { label: "Dry red chill ", value: 2 },
+  { label: "Red Chill Powder ", value: 3 },
+  { label: "Ginger garlic paste", value: 4 },
+  { label: "Cilantro", value: 5 },
+];
+
 const Dish = () => {
+  const navigate = useNavigate()
+  
+  const [isValue,setValue] = useState([options[0].value]);
+  console.log(isValue)
+ 
+
+  const navigateHandler = () =>{
+    navigate('/cooking')
+  }
+
+
+
+
+
   return (
     <>
       <div className="h-full w-screen bg-[#0B1018] text-white">
@@ -132,7 +157,7 @@ const Dish = () => {
 
     {/* Main Ingradients section  */}
     
-        <div className=" translate-x-[24%]">
+        <div className=" translate-x-[24%] relative"> 
         <div className="text-2xl font-semibold items-center mt-5">
             Main Ingradients
           </div>
@@ -153,16 +178,30 @@ const Dish = () => {
             Customize Ingradients
           </div>
 
-          <div className="text-black">
-            <MultiSelectCom/>
-            {/* <NewMultiSelect/> */}
+          <div className="">
+       
+            <NewMultiSelect
+            multiple
+            options={options}
+            isValue={isValue}
+            onChange={(opt)=>setValue(opt)}
+            />
           </div>
+          <KitchenEquipments/>
+          <NumberOfPeople/>
+          <div className="flex items-center translate-x-[24%] my-5" >
+          <button
+          className="p-2 px-4 bg-indigo-600 text-white font-bold rounded-lg"
+          onClick={navigateHandler}>Start Cooking</button>
+          </div>
+         
         </div>
          
 
         <div></div>
         <div></div>
-
+      
+         
         <RecommendedDishes/>
         <Footer/>
       </div>

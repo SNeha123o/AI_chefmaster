@@ -3,6 +3,7 @@ import React from 'react'
 import Home from './pages/Home'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import SingleDish from './pages/SingleDish'
+import Cooking from './pages/Cooking'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/singledish' element={<SingleDish/>}/>
-     </Routes>
+      <Route path='/cooking' element={<Cooking/>}/>
+     </Routes> 
      </BrowserRouter>
     
     </>
