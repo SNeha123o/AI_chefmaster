@@ -3,6 +3,7 @@ import  { useState } from 'react'
 import {AiOutlineEyeInvisible,AiOutlineEye} from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom';
 import toast, { Toaster } from "react-hot-toast";
+import GoogleLogin from '../components/GoogleLogin/GoogleLogin';
 
 const Login = () => {
 
@@ -111,6 +112,7 @@ const Login = () => {
             </a>
           </p>
         </div>
+        <GoogleLogin/>
       </div>
    </div>
     <Toaster/>
