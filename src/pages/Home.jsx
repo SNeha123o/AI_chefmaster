@@ -11,11 +11,11 @@ import EmployeeIDForm from '../components/EmployeeIDForm'
 const Home = () => {
   return (
   <div className='overflow-x-hidden'>
-  {/* <Banner/> */}
-  {/* <Choices/> */}
-  {/* <SeasonalTop/> */}
+  <Banner/>
+  <Choices/>
+  <SeasonalTop/>
   <EmployeeIDForm/>
-  {/* <Footer/> */}
+  <Footer/>
   </div>
   )
 }
