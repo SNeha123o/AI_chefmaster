@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Card1 from '../Card1'
 import ChoicesData from '../../Data/ChoicesData'
