@@ -51,7 +51,7 @@ export const getGoogleAuthToken = async (credential) => {
 }
 
 export const getProfile = async () =>{
-    const response = await client.get('/auth/users/me');
+    const response = await client.get('/auth/accounts/profile');
 
     return response.data
 }
