@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 
+// eslint-disable-next-line react/prop-types
 const EmployeeCard = ({name, role, task, feedback, timeline}) => {
   return (
     <div className='bg-zinc-800 border border-zinc-500 rounded-lg w-full p-8 my-8 text-white relative'>
