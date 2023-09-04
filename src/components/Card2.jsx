@@ -6,7 +6,7 @@ const Card2 = ({ title, imageUrl, time, rating }) => {
     const hasHalfStar = rating % 1 !== 0;
 
   return (
-    <div className="card2 rounded-lg w-[300px] h-[300px] flex flex-col  cursor-pointer bg-zinc-600 p-4">
+    <div className="card2 rounded-lg w-[300px] h-[300px] flex flex-col  cursor-pointer bg-zinc-600 p-4 hover:scale-110 transition-all duration-300">
       <img
         className="rounded-lg w-full h-[175px] object-cover border-2 "
         src={imageUrl}

@@ -19,7 +19,7 @@ const MainMember = () => {
                                 <div className="bg-gradient-to-b rounded-full from-blue-500 to-zinc-800 p-2">
                                 <img src={item.img} alt="team member image" className=" h-40 w-40 rounded-full" />
                                 </div>
-                            
+                            ``
                                 <p>{item.name}</p>
                                 <p>{item.role}</p>
                             </li>

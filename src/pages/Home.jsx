@@ -16,7 +16,6 @@ const Home = () => {
   <DishCategory/>
   <Choices/>
   <SeasonalTop/>
-  <Footer/>
   </div>
 
 

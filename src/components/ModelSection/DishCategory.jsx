@@ -23,10 +23,10 @@ const DishCategory = () => {
         </div>
 
         {/* model section  */}
-        <div className='flex items-center justify-center pt-8'>
+        <div className='flex items-center justify-center pt-8 '>
          {
             ModelData.map((item,index) => {
-                return <div key={index} className='bg-white mr-5 flex items-center justify-cente border-2 border-r flex-col p-4  rounded-lg'>
+                return <div key={index} className='bg-white mr-5 flex items-center justify-cente border-2 border-r flex-col p-4  rounded-lg hover:scale-105 transition-all duration-300'>
                         <img src={item.image} className='h-36   w-fit object-cover rounded-lg' alt="" />
                         <p className='font-medium text-center'>{item.title}</p>
                         <p className='text-sm'>{item.description}</p>
