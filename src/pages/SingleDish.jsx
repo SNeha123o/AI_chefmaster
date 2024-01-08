@@ -68,27 +68,36 @@ const Dish = () => {
   const navigateHandler = () =>{
     navigate('/cooking')
   }
+  // const navigate = useNavigate();
 
+  const handleNavigate = () => {
+   navigate('/')
+  }
 
 
 
 
   return (
     <>
-      <div className="h-full w-screen bg-[#0B1018] text-white">
+      <div className="h-full w-screen bg-[#0B1018] text-white ">
         {/* single dish image and title,nutrition value  */}
-        <div className="flex items-center justify-center gap-10 ">
+        <div>
+        <button
+        onClick={handleNavigate}
+        className="text-white bg-indigo-600 py-1.5 px-4 rounded-lg font-bold ml-6 mt-6">Back</button>
+      </div>
+        <div className="flex items-center  justify-start ml-16 gap-10 border-10 ">
           <div className="mt-10">
             <img
               src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Dhaba-Style-Paneer-Masala-2-3.jpg"
               alt="dish image"
-              className="h-[30rem] w-[30rem] rounded-md"
+              className=" w-[35rem] h-[25rem] rounded-md"
             />
           </div>
 
           <div className="flex flex-col ">
             {/* dish title  and type veg or non veg */}
-            <div className="text-6xl font-bold my-3">Panner Masala</div>
+            <div className="text-6xl font-bold my-3">Paneer Butter Masala</div>
             <div className="bg-slate-700 rounded-full w-fit py-1 px-2 mb-8 f">
               Vegetarian
             </div>
@@ -102,7 +111,7 @@ const Dish = () => {
              
                 <div className="font-semibold">
                   <p>Time</p>
-                  <p>60min</p>
+                  <p>60 min</p>
                 </div>
               </div>
 
@@ -112,19 +121,21 @@ const Dish = () => {
                 </div>
               
                 <div className="font-semibold">
-                  <p>Ingradients</p>
+                  <p>Ingredients</p>
                   <p>20</p>
                 </div>
               </div>
 
               <div className="flex gap-3">
-                <div>
-                <BsFire className="text-4xl mt-2" />
-                </div>
+                {/* <div> */}
+                <div className="text-4xl mt-2" style={{color: 'red'}}>
+                 <BsFire size={32} />
+              </div>
+               
         
                 <div className="font-semibold">
                   <p>Calories</p>
-                  <p>500kcal</p>
+                  <p>500 kcal</p>
                 </div>
               </div>
             </div>
@@ -133,7 +144,7 @@ const Dish = () => {
 
 
             {/* nutrition value  */}
-            <div>
+            {/* <div>
               <div className="text-2xl font-bold py-5">Nutrition Per Serving</div>
               <div className="" >
                 <ul className="flex">
@@ -147,6 +158,10 @@ const Dish = () => {
                   })}
                 </ul>
               </div>
+            </div> */}
+            <div className="xl:max-w-[45rem] 2xl:max-w-[50rem]">
+              <div className="text-2xl font-bold my-3">About the Dish</div>
+              <div>Paneer Butter Masala is a rich and creamy North Indian Dish, featuring succelent chunks of paneer(Indian Cottage Cheese) cooked in a luscious tomato-based gravy, enriched wiht butter and aromatic spices. its indulgent flavours and velvety texture make it a beloved vegetarian delicacy.  </div>
             </div>
           </div>
 
@@ -156,9 +171,9 @@ const Dish = () => {
 
     {/* Main Ingradients section  */}
     
-        <div className=" translate-x-[24%] relative"> 
+        <div className=" ml-16 relative"> 
         <div className="text-2xl font-semibold items-center mt-5">
-            Main Ingradients
+            Main Ingredients
           </div>
           <ul className="flex gap-5 mt-5">
           {
@@ -174,12 +189,12 @@ const Dish = () => {
 
 
           <div className="text-2xl font-semibold mt-5">
-            Customize Ingradients
+            Customize Ingredients
           </div>
 
           <div className="">
        
-            <NewMultiSelect
+            <NewMultiSelect className="ml-64"
             multiple
             options={options}
             isValue={isValue}
@@ -188,7 +203,7 @@ const Dish = () => {
           </div>
           <KitchenEquipments/>
           <NumberOfPeople/>
-          <div className="flex items-center translate-x-[24%] my-5" >
+          <div className="flex justify-center items-center  my-5" >
           <button
           className="p-2 px-4 bg-indigo-600 text-white font-bold rounded-lg"
           onClick={navigateHandler}>Start Cooking</button>

@@ -39,7 +39,7 @@ const NewMultiSelect = ({ multiple,isValue, onChange, options }) => {
   return (
     <>
       {/* It is used to display selected customize ingradients  */}
-      <div className="min-h[1.5em] w-[100em] py-5">
+      <div className="min-h[1.5em] w-[100em] py-5 -ml-4">
         <span className="flex-grow text-white">
           {multiple?isValue.map((selectedValue) => {
             const selectedOption = options.find((option) => option.value === selectedValue)

@@ -1,21 +1,26 @@
-import { useState } from "react"
-
+import { useEffect, useState } from "react"
+import videorul from "../../../styles/InShot_20240103_185705791.mp4"
 
 const Banner = () => {
   const [dish,setDish] = useState()
 
   const changeHandler = (e) =>{
-setDish(e.target.value)
+   setDish(e.target.value)
   }
+
   return (
   <>
+  <div style={{width: "100%;", height: "400px;" ,overflow: "hidden;"}}>
+
+  <video id="chaljabhai" src={videorul} autoPlay loop className="absolute inset-0 h-[60vh] w-full object-fill">
+    
+    </video>
+  </div>
   <div className="w-screen h-[60vh] bg-black ">
 
     <div className="text-white  flex flex-col items-center justify-center h-full object-cover">
-      <div  className="absolute inset-0 bg-no-repeat bg-cover h-[60vh]"
-    style={{
-      backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.70) 20%, rgba(0, 0, 0, 0.70) 100%), url('https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/07/Food.jpg?fit=1200%2C643&ssl=1')",
-    }}></div>
+    
+    
       <div className="relative text-4xl font-bold ">Welcome To AI Chef Kitchen</div>
       <div className="relative text-2xl font-semibold">Cook your favourite Dish,Cuisines & recipe with AI Chef</div>
 
@@ -26,7 +31,7 @@ setDish(e.target.value)
              <select name="" id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-tr-none rounded-br-none rounded-tl-lg font-semibold rounded-bl-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 outline-none ">
               <option selected className="font-bold">Breakfast</option>
               <option value="breakfast">Breakfast</option>
-              <option value="Launch">Launch</option>
+              <option value="Lunch">Lunch</option>
               <option value="Snacks">Snacks</option>
               <option value="Dinner">Dinner</option>
              </select>

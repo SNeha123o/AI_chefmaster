@@ -19,13 +19,13 @@ const IngredientsData =[
     },
     {
         title: "Red chilli poweder",
-        image: "",
+        image: "🍅",
         quantity: "2 tbsp"
         
     },
     {
         title: "Oil",
-        image: "",
+        image: "🍅",
         quantity: "10ml"
         
     },

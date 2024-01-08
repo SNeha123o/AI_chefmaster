@@ -1,18 +1,23 @@
 export const CategoryDishes = [
     {
         title: "All",
+        page:""
     },
     {
         title: "Breakfast",
+        page:"/breakfast"
     },
     {
-        title: "Launch",
+        title: "Lunch",
+        page:""
     },
     {
         title: "Snacks",
+        page:""
     },
     {
-        title:"Dinner"
+        title:"Dinner",
+        page:""
     }
 
 ]

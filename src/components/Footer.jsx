@@ -9,7 +9,7 @@ const Footer = () => {
         <div className=''>
           <img src={logo} className='h-20' alt="" />
         </div>
-        <div className="text-2xl font-bold">HOUSE OF DISHES</div>
+        <div className="text-2xl font-bold">AI Chef Master</div>
         <div className='text-gray-500'>
             <p>Priacy Policy | Cookie Policy | Terms</p>
         </div>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-6">
           <p  className="">Support</p>
-          <a href="#" className="text-gray-500 hover:text-gray-200">Help Center</a>
+          <a href="#" className="text-gray-500 hover:text-gray-200 mr-5">Help Center</a>
           
         </div>
 

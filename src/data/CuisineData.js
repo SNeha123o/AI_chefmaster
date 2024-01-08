@@ -1,6 +1,6 @@
 const CuisineData = [
     {
-        title:"Maharashtrian",
+        title:"Indian",
         imageUrl: "https://www.awesomecuisine.com/wp-content/uploads/2011/08/Maharashtrian-Cuisine.jpg"
     },
     {

@@ -19,7 +19,7 @@ export const ModelData = [
     },
     {
         path:"/user_meal",
-        title:"Create",
+        title:"Create Dishes",
         image:"https://blog.nutriadmin.com/wp-content/uploads/2022/08/how-to-create-a-meal-plan-nutriadmin-using-macros-and-energy.jpeg",
         description:"Make Quick Dishes at home with AI Chef"
     }
