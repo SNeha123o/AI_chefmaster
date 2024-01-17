@@ -124,16 +124,22 @@ function Breakfast() {
             <Card1 key={index} title={item.title} imageUrl={item.imageUrl} />
           ))}
         </div>
+        <div className="flex flex-col flex-wrap">
 
         {CountriesData[`${index}`].states.map((state, index) => (
+          
+          
+          
           <Card3
-            key={index}
-            title={state.state}
-            stateImage={state.stateImage}
-            famousDish={state.famousDish}
-            dishImage={state.famousDish}
+          key={index}
+          title={state.state}
+          stateImage={state.stateImage}
+          famousDish={state.famousDish}
+          dishImage={state.famousDish}
           />
-        ))}
+          
+          ))}
+          </div>
       </div>
       <div></div>
     </div>

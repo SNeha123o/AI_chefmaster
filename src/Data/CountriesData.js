@@ -23,7 +23,30 @@ const countriesData = [
       {
         dishName: "Pav Bhaji",
         dishImage: "https://t3.ftcdn.net/jpg/06/40/14/24/360_F_640142414_WuUgLKRAa3Dqe92blRessQm356FyB8RJ.webp"
-      }
+      }, {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
+      {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
+      {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
+      {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
+      {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
+      {
+        dishName: "Vada Pav",
+        dishImage: "https://t3.ftcdn.net/jpg/01/16/14/14/360_F_116141457_gj7IMZ5ll0j1uGqXQ6lXjF4vnpgL5tkc.webp"
+      },
     ]
   },
   {

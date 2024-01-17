@@ -8,7 +8,7 @@ const Card2 = ({ title, imageUrl, time, rating, link }) => {
     const hasHalfStar = rating % 1 !== 0;
 
   return (
-    <div className="  rounded-lg  h-[325px] flex  flex-row md:flex-col bg-white w-[325px]  cursor-pointer   hover:scale-110 transition-all duration-300 ">
+    <div className="  rounded-lg  h-[325px] flex  flex-row md:flex-col  w-[325px]  cursor-pointer   hover:scale-110 transition-all duration-300 ">
       {/* <NavLink to={link=="Country"?`/luxx_dishes/${title}`:""}>
 
       <img
@@ -54,6 +54,11 @@ const Card2 = ({ title, imageUrl, time, rating, link }) => {
       <NavLink to={link=="Country"?`/luxx_dishes/${title}`:""}>
 
       <div class = "card-media " style={{  }} >
+      <img
+        className="rounded-lg w-full h-[200px] object-cover border-2 "
+        src={imageUrl}
+        alt={title}
+        />
         {/* <div class = "discount">40% OFF<p>Up to &#x20b9;100 </p></div>
         <div class = "pro-discount">extra 15% OFF</div>
         <div class = "bookmark"></div> */}
