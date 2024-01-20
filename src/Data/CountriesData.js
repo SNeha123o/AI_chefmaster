@@ -68,7 +68,8 @@ const countriesData = [
       {
         dishName: "Kerala Parotta",
         dishImage: "https://t4.ftcdn.net/jpg/03/22/27/43/360_F_322274314_MEln9YzXVGc35pXYz4hqkFzJzvGMgmvt.webp"
-      }
+      },
+      
     ]
   },
   {

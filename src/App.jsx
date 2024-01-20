@@ -14,7 +14,8 @@ import UserMeal from './components/UserMeal'
 import CountryCuisine from './components/CountryCuisine'
 import TeamPage from './pages/TeamPage'
 import Breakfast from './pages/Breakfast'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const App = () => {
   return (
     <>

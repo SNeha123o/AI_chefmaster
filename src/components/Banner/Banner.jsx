@@ -10,16 +10,20 @@ const Banner = () => {
 
   return (
   <>
-  <div style={{width: "100%;", height: "400px;" ,overflow: "hidden;"}}>
+  {/* <div style={{width: "100%;", height: "400px;" ,overflow: "hidden;"}}> */}
 
-  <video id="chaljabhai" src={videorul} autoPlay loop className="absolute inset-0 h-[60vh] w-full object-fill">
+  {/* <video id="chaljabhai" src={videorul} autoPlay loop className="absolute inset-0 h-[60vh] w-full object-fill">
     
-    </video>
-  </div>
+    </video> */}
+  {/* </div> */}
   <div className="w-screen h-[60vh] bg-black ">
 
     <div className="text-white  flex flex-col items-center justify-center h-full object-cover">
-    
+    <div  className="absolute inset-0 bg-no-repeat bg-cover h-[60vh]"
+    style={{
+      backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.70) 20%, rgba(0, 0, 0, 0.70) 100%), url('https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/07/Food.jpg?fit=1200%2C643&ssl=1')",
+    }}></div>
+
     
       <div className="relative text-4xl font-bold ">Welcome To AI Chef Kitchen</div>
       <div className="relative text-2xl font-semibold">Cook your favourite Dish,Cuisines & recipe with AI Chef</div>

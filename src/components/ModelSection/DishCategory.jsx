@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React,{useState} from 'react'
 import { CategoryDishes } from '../../Data/CategoryDishes'
 import { ModelData } from '../../Data/ModelData'
 import { NavLink } from 'react-router-dom';
@@ -8,6 +8,25 @@ import "./DishCategory.css"
 
 
 const DishCategory = () => {
+
+  // const [transforms, setTransforms] = useState({ rotateX: 0, rotateY: 0 });
+
+  // const handleMouseOver = (event) => {
+  //   const coords = event.target.getBoundingClientRect();
+  //   const centerX = coords.x + coords.width / 2;
+  //   const centerY = coords.y + coords.height / 2;
+  //   const rotateY = Math.atan((event.clientX - centerX) / (coords.height / 2));
+  //   const rotateX = Math.atan((event.clientY - centerY) / (coords.width / 2));
+  //   const rotateXdeg = rotateX * (180 / Math.PI);
+  //   const rotateYdeg = rotateY * (180 / Math.PI);
+  //   setTransforms({ rotateX: rotateXdeg * 0.8, rotateY: rotateYdeg * 0.3 });
+  // };
+
+  // const handleMouseLeave = () => {
+  //   setTransforms({ rotateX: 0, rotateY: 0 });
+  // };
+
+
   return (
     <>
   
@@ -35,6 +54,9 @@ const DishCategory = () => {
          }
           </ul>
         </div>
+
+       
+
 
         {/* model section  */}
         <div className='flex items-center justify-center pt-8    '>
