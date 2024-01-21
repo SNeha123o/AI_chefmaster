@@ -78,7 +78,7 @@ function Breakfast() {
         <p className="border-l-4 border-red-600 py-2 pl-3 ml-6  text-white mb-3 text-3xl font-semibold">
           Choose Your Cuisine
         </p>
-        <div className="flex  border-2 border-[#15f324] bg-black fill-black  flex-col lg:flex-row mb-24 w-36 md:mx-12 mx-1    px-2 z-[1000] gap-x-4 ">
+        <div className="flex  border-2 border-[#15f324] bg-black fill-black  flex-col lg:flex-row mb-2 w-36 md:mx-12 mx-1    px-2 z-[1000] gap-x-4 ">
           <div className="dropdown w-full  shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div
               onClick={(e) => setIsJobActive(!isJobActive)}
